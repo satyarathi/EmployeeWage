@@ -1,7 +1,7 @@
 package com.dayeight.one;
 
 public class EmployeeWageComp {
-	public static void main(String[] args) {
+	public static void TotalWage() {
 
 		final int part_time =1;
 		final int present = 2;
@@ -25,7 +25,6 @@ public class EmployeeWageComp {
 			case part_time:
 				working_hr = 6;
 				break;
-
 			default:
 				working_hr = 0;
 				break;
@@ -36,6 +35,10 @@ public class EmployeeWageComp {
 			System.out.printf("%4s   %4s    %7s   %4s\n", day,working_hr,wage,totalworkinghrs+working_hr);
 		}
 		System.out.println("Total wage for a month :" +total_wage);
+	}
+	
+	public static void main(String[] args) {
+		TotalWage();
 	}
 }
 
